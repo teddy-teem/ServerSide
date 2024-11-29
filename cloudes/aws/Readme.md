@@ -10,5 +10,4 @@
         Default Region: us-east-1 (or any region)
         Output Format: json
 8. run service
-9. run consumer
 

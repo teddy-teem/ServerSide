@@ -1,4 +1,4 @@
-1. write lambda function as plain js
+1. write lambda function as plain js ```lambda_function.js```
 2. zip that file ```zip lambda_function.zip lambda_function.js```
 3. command to create lambda ```aws --endpoint-url=http://localhost:4566 lambda create-function \
     --function-name hello-world \

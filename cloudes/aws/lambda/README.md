@@ -12,3 +12,4 @@
     --payload '{}' \
     response.json```
 6. check response ```cat response.json```
+7. or u can invoke it with any service e.g ```index.js```

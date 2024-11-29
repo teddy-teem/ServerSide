@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "4566:4566"  # LocalStack Gateway
+    environment:
+      - SERVICES=s3  # Only enable S3 service
+      - DEBUG=1
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"  # Required for Lambda execution
+      - "./localstack:/var/lib/localstack"  # Optional volume for persistence
